@@ -1,16 +1,15 @@
 language: node_js
 node_js:
 - '0.12'
-- '4.4.3'
-
+- 4.4.3
 env:
-  - CXX=g++-4.8
+- CXX=g++-4.8
 addons:
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+    - ubuntu-toolchain-r-test
     packages:
-      - g++-4.8
+    - g++-4.8
 cache:
   directories:
   - node_modules
@@ -24,3 +23,10 @@ before_script:
 - gulp prod
 script:
 - gulp karma
+deploy:
+  provider: heroku
+  api_key:
+    secure: ahVHvm9c9xqtztLG+QfB9Xxhhz6lmicJEg82Afz2CxeitBBJNyRvLa5swBdvzRBN/uvueP1MZ/wjHqoXigOyL4NX2bE++8r252/CcffbpsHegkM3sm8/5vmPiTISylUWs8q3FCYzYe3mHbBFQeGn2b+FWfWH0cWSgy8wqfuyAhsFCBqc11EuJYcr35ppSpJQLOODx/Gf/G+X2aMkccXuTpUOYJQmTTFt23jCDvx5GXDC/LRjjROc99zqBGC/TN0UA6YCTrzFA6/QuZ6OhDNXWGjcU+hQkj4F+iawA85Ebb0HCFl4JhBzz0MmfJR14rQqkwtrPmhimhXWI1Zgw3wmKWAH5t6F6uuSBqkVh8uT9GcFeKjDwTOB0CpVP+NJUil3kdFFOD581jqTLSJm/uvZNsXdswHnpi4QH/sIcPKxQVyWsNATZmXgWlot7jhMscn/H02lM6XnTrnE6F7TG9bsvH1tvd+Y6ENjoa9DjERSTSNko1KNq4tEuYlFO4C92ZCjp34g9ZySFlGXswWjW+7yJktjGdT2LnVwc+3jRnrq3K2VtmFKMhCbIP9MkpK2UKZoyYlrPqDDGilq4O/5Em38BH16v0adlyO7dzAIaCuog1U/zK0bsXEUTLn0ivwLLTCxiSIPua+IHdgdyh5ZHuzna/TiOYhhyfq6j/eLjr/0HhE=
+  app: gdg-jsiit
+  on:
+    repo: freewayz/boomerang
