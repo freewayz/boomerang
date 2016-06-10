@@ -44,15 +44,11 @@ function serverWorking(response, absPath) {
 
 var server = http.createServer(function(req, res){
           var filePath = false;
-          
-          
           if (req.url == '/') {
                     filePath = "index.html"
           } else {
                     filePath =  req.url
           }
-          
-          
           var absPath = "./" + filePath;
           serverWorking(res, absPath);
 })

@@ -1,12 +1,13 @@
 {
     "name": "boomerang",
     "version": "2.1.5",
+    
     "description": "GDG chapter boilerplate that feeds from DevSite and Google+ using AngularJS and Angular Material.",
     "main": "index.html",
     "scripts": {
         "start": "http-server -o",
         "test": "gulp karma",
-        "postinstall": "bower install",
+        "postinstall": "bower install && gulp prod",
         "buildProd": "gulp prod"
     },
     "repository": {
@@ -22,7 +23,7 @@
     "author": "GDG-X",
     "license": "Apache-2.0",
     "engines": {
-        "node": ">= 0.12",
+        "node": ">= 4.4.3",
         "npm": ">= 2.1"
     },
     "bugs": {
@@ -31,7 +32,9 @@
     "homepage": "https://github.com/gdg-x/boomerang",
     "dependencies": {
               "mime" : "~1.2.7",
-              "bower": "1.7.7"
+              "bower": "1.7.7",
+              "gulp": "3.9.1"
+              
     },
     "devDependencies": {
         "bower": "1.7.7",
