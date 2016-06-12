@@ -3,14 +3,14 @@ angular.module('gdgXBoomerang')
     return {
         // TODO Modify these to configure your app
         'name'          : 'GDG JSIIT',
-        'id'            : '103959793061819610212',
-        'googleApi'     : '<insert your API key here>',
-        'pwaId'         : '5915725140705884785', // Picasa Web Album id, must belong to Google+ id above
+        'id'            : '107415840199830484575',
+        'googleApi'     : 'AIzaSyCX3_3O6VIxK0trONGletFcrq7j5sdhGQY',
+        'pwaId'         : '106009422492829297252', //Remove this and replace with the main GDG jsitt own
         'domain'        : 'http://www.gdgspacecoast.org',
-        'twitter'       : 'gdgspacecoast',
-        'facebook'      : 'gdgspacecoast',
-        'youtube'       : 'UCkiYHK3IZMk5XsYZ626b9Rw',
-        'meetup'        : 'gdgspacecoast',
+        'twitter'       : 'gdgjsiit',
+        'facebook'      : 'Google-Developers-Group-JSIIT-1506244079672735',
+        'youtube'       : '',
+        'meetup'        : '',
         // Change to 'EEEE, MMMM d, y - H:mm' for 24 hour time format.
         'dateFormat'    : 'EEEE, MMMM d, y - h:mm a',
         'cover' : {

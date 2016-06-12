@@ -4,7 +4,7 @@
           "description": "GDG chapter boilerplate that feeds from DevSite and Google+ using AngularJS and Angular Material.",
           "main": "index.html",
           "scripts": {
-                    "start": "http-server -o",
+                    "start": "node server.js",
                     "test": "gulp karma",
                     "postinstall": "bower install && gulp prod",
                     "buildProd": "gulp prod"
